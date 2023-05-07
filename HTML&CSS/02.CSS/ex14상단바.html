@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 임시작성 => 나중에 지우기 */
+        .container div{
+            border : 1px solid black;
+        }
+
+        .container{
+            background-color: whitesmoke;
+            height : 100px;
+            
+            display : flex;
+            flex-direction: row;
+            
+           
+        }
+
+        #left{
+            flex-basis: 15%;
+            display : flex;
+            
+            justify-content: center;
+            align-items: center;
+        }
+         #center{
+           
+            flex-basis: 70%;
+
+
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+
+
+        #right{
+            
+            flex-basis: 15%;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        } 
+        a{
+            text-decoration: none;
+            padding: 10px ;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 상단바 전체 영역 -->
+    <div class="container">
+        <div class="box" id="left">
+           <h1>파쿠야</h1> 
+        </div>
+        <div class="box" id="center">
+            <b><a href="#" >메뉴</a></b>
+            <b><a href="#">베스트</a></b>
+            <b><a href="#">뉴스</a></b>
+        </div>
+        <div class="box" id="right">
+           <b> <a href="#">로그인</a></b>
+            <b><a href="#">회원가입</a></b>
+        </div>
+    </div>
+
+</body>
+</html>
